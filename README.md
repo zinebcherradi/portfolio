@@ -1,4 +1,4 @@
-# Portfolio Zineb Cherradi | Full Stack & AI Developer
+# Portfolio Zineb Cherradi 
 
 ## Présentation
 
