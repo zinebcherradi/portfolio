@@ -188,75 +188,73 @@
   letter-spacing: 0.05em;
   font-weight: 600;
 }
-
-/* --- Responsive Mobile --- */
+/* --- Responsive Mobile FORCÉ --- */
 @media (max-width: 968px) {
+  /* 1. On casse la grille et on passe en colonne verticale */
   .hero-content {
-    display: flex;
-    flex-direction: column; /* Empile les éléments verticalement */
-    text-align: center;
-    gap: 3rem;
-    padding-top: 2rem;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    padding-top: 4rem !important; /* Espace sous la navbar */
   }
   
-  /* 1. Le TEXTE passe en premier */
+  /* 2. Le TEXTE passe en premier (ordre 1) */
   .hero-text {
-    order: 1; 
-    width: 100%;
+    order: 1 !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
   }
 
-  /* 2. L'IMAGE passe en second (APRÈS le texte et les boutons) */
+  /* 3. L'IMAGE passe en second (ordre 2) */
   .hero-visual {
-    order: 2;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    order: 2 !important;
+    width: 100% !important;
+    height: auto !important; /* Hauteur automatique */
+    margin-top: 1rem !important;
   }
   
-  .hero-description {
-    margin: 0 auto 2rem;
-    font-size: 1rem;
-  }
-  
-  .hero-buttons {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  /* Ajustement taille image mobile */
+  /* Ajustement de l'image elle-même */
   .hero-image-wrapper {
-    height: 45vh; /* Taille raisonnable pour mobile */
-    width: 100%;
-    position: relative;
+    height: 45vh !important; /* Taille contrôlée */
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
   .hero-photo {
-    height: 100%;
-    width: auto;
-    max-width: 85%; /* Marge sur les côtés */
-    object-fit: contain;
-    border-radius: 30px; 
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    animation: float 6s ease-in-out infinite;
+    height: 100% !important;
+    width: auto !important;
+    max-width: 85% !important; /* Marge latérale */
+    object-fit: contain !important;
+    border-radius: 25px !important;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
   }
 
-  /* Badge centré sous l'image */
-  .hero-badge {
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-left: none;
-    border-top: 3px solid var(--primary);
-    padding: 0.8rem 1.5rem;
-    background: var(--surface-color);
-    backdrop-filter: blur(10px);
-    white-space: nowrap;
+  /* Centrage des boutons */
+  .hero-buttons {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
   }
   
+  /* Badge centré sous l'image */
+  .hero-badge {
+    position: absolute !important;
+    bottom: -10px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+    border-left: none !important;
+    border-top: 3px solid var(--primary) !important;
+    padding: 0.8rem 1.5rem !important;
+    white-space: nowrap !important;
+  }
+  
+  /* Texte géant adapté */
   .hero-bg-text {
-    font-size: 25vw;
-    top: 20%;
+    font-size: 20vw !important;
+    top: 15% !important;
   }
 }
