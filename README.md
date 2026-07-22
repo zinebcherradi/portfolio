@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# Portfolio Zineb Cherradi | Full Stack & AI Developer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Présentation
 
-## Available Scripts
+Ce portfolio personnel a été conçu et développé from scratch afin de présenter mon parcours académique, mes compétences techniques et mes principaux projets réalisés en Génie Logiciel à l'ESISA.
 
-In the project directory, you can run:
+L'objectif de ce site est de proposer une expérience moderne, interactive et professionnelle permettant de découvrir mon profil, mes réalisations et mon évolution dans le domaine du développement logiciel.
 
-### `npm start`
+## Objectifs du projet
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ce portfolio met en avant :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Mon parcours en ingénierie logicielle
+- Mes compétences en développement web et technologies modernes
+- Mes projets techniques majeurs
+- Ma capacité à concevoir des applications performantes, sécurisées et maintenables
+- Mon approche orientée résolution de problèmes et innovation
 
-### `npm test`
+## Fonctionnalités principales
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Interface moderne et responsive
 
-### `npm run build`
+- Design personnalisé développé avec CSS pur
+- Adaptation complète aux différents formats d'écran
+- Expérience utilisateur fluide et intuitive
+- Animations et transitions modernes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Système de thème Dark/Light
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Le portfolio intègre un système de gestion de thème permettant aux utilisateurs de basculer entre un mode clair et un mode sombre.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Cette fonctionnalité repose sur :
 
-### `npm run eject`
+- Context API de React pour la gestion globale de l'état
+- Variables CSS pour la gestion dynamique des couleurs
+- Persistance du choix utilisateur
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Architecture modulaire
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Le projet respecte une organisation claire et maintenable :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Composants React indépendants
+- Séparation stricte entre JSX et CSS
+- Réutilisation des composants
+- Structure facilitant l'évolution du projet
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Animations interactives
 
-## Learn More
+Des animations fluides sont intégrées grâce à :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Framer Motion
+- Transitions personnalisées
+- Effets d'apparition et de mouvement pour améliorer l'expérience utilisateur
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Projets présentés
 
-### Code Splitting
+Le portfolio met en avant plusieurs projets techniques réalisés :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### SecureBank
 
-### Analyzing the Bundle Size
+Application bancaire sécurisée full-stack mettant en œuvre :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Authentification sécurisée
+- Gestion des utilisateurs
+- Architecture backend structurée
+- Concepts de sécurité comme JWT et Zero Trust
 
-### Making a Progressive Web App
+### MrClens
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Application intelligente dédiée à l'expérience touristique intégrant :
 
-### Advanced Configuration
+- Technologies web modernes
+- Expérience utilisateur personnalisée
+- Fonctionnalités basées sur l'intelligence artificielle
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Dashboard Power BI
 
-### Deployment
+Projet d'analyse et de visualisation de données permettant :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Exploration des données
+- Création de tableaux de bord interactifs
+- Analyse et interprétation des indicateurs clés
 
-### `npm run build` fails to minify
+## Technologies utilisées
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Frontend
+
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Context API
+- Framer Motion
+
+### Concepts appliqués
+
+- Architecture modulaire
+- Responsive Design
+- Gestion d'état globale
+- Design UI/UX
+- Bonnes pratiques de développement frontend
+
+## Compétences mises en avant
+
+À travers ce portfolio, je présente mon intérêt pour :
+
+- Le développement Full Stack
+- L'intelligence artificielle
+- La conception d'applications sécurisées
+- Les architectures modernes
+- La création d'expériences utilisateur performantes
+
+## Recherche de stage
+
+Actuellement en fin de 3ᵉ année de Génie Logiciel à l'ESISA et prochainement en Master, je suis à la recherche d'un stage de 8 semaines (août–octobre 2026) afin de mettre mes compétences techniques au service de projets innovants et de développer davantage mon expérience professionnelle.
+
+## Installation et exécution du projet
+
+Cloner le repository :
+
+```bash
+git clone <repository-url>
