@@ -1,0 +1,164 @@
+/* src/components/sections/Contact.css */
+
+.contact-section {
+  padding: var(--section-padding) 0 2rem;
+  background: var(--bg-color);
+  transition: background var(--transition-speed);
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+/* --- Texte Gauche : Appel à l'action --- */
+.contact-title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.text-primary { 
+  color: var(--primary); 
+}
+
+.contact-description {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 450px;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.btn-contact {
+  display: inline-block;
+  padding: 1.2rem 3rem;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+}
+
+/* --- Infos Droite : Coordonnées --- */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.info-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.info-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.info-item a, 
+.info-item span:last-child {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.info-item a:hover { 
+  color: var(--primary); 
+}
+
+/* --- Liens Sociaux (CORRIGÉ POUR CLIC) --- */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  pointer-events: auto !important; /* Force l'interactivité */
+}
+
+.social-link {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: var(--text-muted);
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 20; /* Au-dessus de tout autre élément */
+  position: relative;
+  border-radius: 50%;
+  text-decoration: none !important;
+  background: transparent;
+  pointer-events: auto !important; /* Garantit que le clic passe */
+}
+
+.social-link:hover {
+  color: var(--primary);
+  transform: translateY(-3px);
+  background: var(--surface-color);
+}
+
+/* --- Footer Minimaliste --- */
+.footer-bar {
+  border-top: 1px solid var(--surface-color);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-bar p {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* --- Responsive Mobile --- */
+@media (max-width: 968px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    text-align: center;
+  }
+  
+  .contact-description { 
+    margin: 0 auto 2.5rem; 
+  }
+  
+  .info-item { 
+    justify-content: center; 
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .social-links { 
+    justify-content: center; 
+  }
+}
