@@ -192,10 +192,25 @@
 /* --- Responsive Mobile --- */
 @media (max-width: 968px) {
   .hero-content {
-    grid-template-columns: 1fr; /* Une seule colonne */
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
     text-align: center;
     gap: 3rem;
     padding-top: 2rem;
+  }
+  
+  /* 1. Le TEXTE passe en premier */
+  .hero-text {
+    order: 1; 
+    width: 100%;
+  }
+
+  /* 2. L'IMAGE passe en second (APRÈS le texte et les boutons) */
+  .hero-visual {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   
   .hero-description {
@@ -205,49 +220,43 @@
   
   .hero-buttons {
     justify-content: center;
-    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si besoin */
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   
-  /* CORRECTION IMAGE MOBILE */
+  /* Ajustement taille image mobile */
   .hero-image-wrapper {
-    height: 50vh; /* Hauteur fixe raisonnable pour mobile */
+    height: 45vh; /* Taille raisonnable pour mobile */
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: visible; /* Important pour voir l'ombre et le badge */
+    position: relative;
   }
 
   .hero-photo {
-    height: 100%; /* L'image remplit le conteneur de 50vh */
-    width: auto; /* Garde les proportions */
-    max-width: 90%; /* Évite que l'image touche les bords de l'écran */
+    height: 100%;
+    width: auto;
+    max-width: 85%; /* Marge sur les côtés */
     object-fit: contain;
-    
-    /* On garde le style flottant mais on adapte l'ombre */
     border-radius: 30px; 
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    
-    /* Animation toujours active */
     animation: float 6s ease-in-out infinite;
   }
 
-  /* Ajustement du badge sur mobile */
+  /* Badge centré sous l'image */
   .hero-badge {
     position: absolute;
-    bottom: -20px; /* Légèrement superposé en bas */
-    right: 50%;
-    transform: translateX(50%); /* Centré horizontalement */
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
     border-left: none;
     border-top: 3px solid var(--primary);
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     background: var(--surface-color);
     backdrop-filter: blur(10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    white-space: nowrap;
   }
   
   .hero-bg-text {
-    font-size: 25vw; /* Texte géant adapté à la largeur mobile */
-    top: 30%; /* Remonté pour ne pas gêner la lecture */
+    font-size: 25vw;
+    top: 20%;
   }
 }
