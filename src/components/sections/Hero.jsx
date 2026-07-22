@@ -1,16 +1,20 @@
+// src/components/sections/Hero.jsx
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Hero.css';
 
-// IMPORT CRUCIAL : Chemin relatif depuis Hero.jsx vers l'image
+// IMPORT DE LA PHOTO (Obligatoire car elle est dans src/)
 import zinebPhoto from '../../assets/images/zineb-detouree.png'; 
 
 const Hero = () => {
   return (
     <section className="hero">
+      {/* Texte géant en arrière-plan */}
       <h1 className="hero-bg-text display-text">PORTFOLIO</h1>
 
       <div className="container hero-content">
+        {/* Colonne Gauche : Texte & Actions */}
         <motion.div 
           className="hero-text"
           initial={{ opacity: 0, x: -50 }}
@@ -27,11 +31,23 @@ const Hero = () => {
           </p>
           
           <div className="hero-buttons">
-            <button className="btn-primary">Voir mes projets</button>
-            <button className="btn-outline">Télécharger CV</button>
+            {/* Bouton Scroll vers Projets */}
+            <a href="#projects" className="btn-primary">
+              Voir mes projets
+            </a>
+            
+            {/* Bouton Téléchargement CV (Lien direct vers public/cv.pdf) */}
+            <a 
+              href="/cv.pdf" 
+              download="CV_Zineb_Cherradi_FullStack_IA.pdf" 
+              className="btn-outline"
+            >
+              Télécharger CV
+            </a>
           </div>
         </motion.div>
 
+        {/* Colonne Droite : Photo Flottante & Badge */}
         <motion.div 
           className="hero-visual"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -39,12 +55,11 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className="hero-image-wrapper">
-            {/* UTILISATION DE LA VARIABLE IMPORTÉE */}
             <img src={zinebPhoto} alt="Zineb Cherradi" className="hero-photo" />
             
             <div className="hero-badge">
               <span className="badge-number">3+</span>
-              
+              <span className="badge-label">Années d'Expérience</span>
             </div>
           </div>
         </motion.div>
